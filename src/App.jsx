@@ -24,6 +24,12 @@ const App =()=> {
       amount: 450,
       date: new Date(2021, 5, 12),
     },
+    {
+      id: "e4",
+      title: "Library",
+      amount: 650,
+      date: new Date(2023, 8, 12),
+    },
   ];
   const [expenses ,SetExpenses] =useState(Dummy_Expenses)
   const addExpenseHandler =(expense)=>{
