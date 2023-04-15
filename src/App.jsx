@@ -1,9 +1,9 @@
-import React , {useState} from 'react';
-import './App.css'
+import React, { useState } from "react";
+import "./App.css";
 
 import Expenses from "./Components/Expenses/Expenses";
 import NewExpense from "./Components/NewExpense/NewExpense";
-const App =()=> {
+const App = () => {
   const Dummy_Expenses = [
     {
       id: "e1",
@@ -31,17 +31,17 @@ const App =()=> {
       date: new Date(2023, 8, 12),
     },
   ];
-  const [expenses ,SetExpenses] =useState(Dummy_Expenses)
-  const addExpenseHandler =(expense)=>{
-    SetExpenses(prevExpenses =>{
-      return [expense , ...prevExpenses]
-    })
-  }
+  const [expenses, SetExpenses] = useState(Dummy_Expenses);
+  const addExpenseHandler = (expense) => {
+    SetExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    });
+  };
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses item={expenses} />
     </div>
   );
-}
-export default App
+};
+export default App;
