@@ -47,7 +47,7 @@ return <form onSubmit={submitHandler}>
         </div>
         <div className="new-expense__control">
             <label>Date</label>
-            <input type="date" value={enteredDate} min="2019-1-1" max="2022 -12-31"  onChange={dateChangeHandler}/>
+            <input type="date" value={enteredDate} min="2019-1-1" max="2023 -12-31"  onChange={dateChangeHandler}/>
         </div>
     </div>
    <div className="new-expense__actions">
